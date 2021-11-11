@@ -28,6 +28,8 @@
 			document.addEventListener(
 				"setCustomField",
 				function (event) {
+					console.log('event listerner')
+					console.log(event.detail.customField);
 					embedded_svc.settings.extraPrechatFormDetails[0].value = event.detail.customField;
 					// Fire startChat callback.
 					event.detail.callback();
