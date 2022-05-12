@@ -8,11 +8,11 @@
 <body>
     <style type='text/css'>
         .embeddedServiceHelpButton .helpButton .uiButton {
-            background-color: #005290;
+            background-color: #0C6CCE;
             font-family: "Arial", sans-serif;
         }
         .embeddedServiceHelpButton .helpButton .uiButton:focus {
-            outline: 1px solid #005290;
+            outline: 1px solid #0C6CCE;
         }
     </style>
     
@@ -41,17 +41,17 @@
             embedded_svc.settings.entryFeature = 'LiveAgent';
     
             embedded_svc.init(
-                'https://d5j0000045cygea2-dev-ed.my.salesforce.com',
-                'https://newtesthimaja-developer-edition.ap27.force.com',
+                'https://onebfs--uat.my.salesforce.com',
+                'https://uat-onebfs.cs116.force.com/KnowledgeCentreCommunity',
                 gslbBaseURL,
-                '00D5j0000045CYG',
-                'Site_Inactive',
+                '00D2O000000Bckr',
+                'PB_Mortgage_Chat',
                 {
-                    baseLiveAgentContentURL: 'https://c.la2-c2-ukb.salesforceliveagent.com/content',
-                    deploymentId: '5725j000000PEkO',
-                    buttonId: '5735j000000TRIl',
-                    baseLiveAgentURL: 'https://d.la2-c2-ukb.salesforceliveagent.com/chat',
-                    eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I5j00000005HLEAY_180a4721385',
+                    baseLiveAgentContentURL: 'https://c.la1-c1cs-cdu.salesforceliveagent.com/content',
+                    deploymentId: '57228000000Gmvs',
+                    buttonId: '57328000000Kz6n',
+                    baseLiveAgentURL: 'https://d.la1-c1cs-cdu.salesforceliveagent.com/chat',
+                    eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I5K000000002lUAA_17c7dcbbb1e',
                     isOfflineSupportEnabled: false
                 }
             );
@@ -59,7 +59,7 @@
     
         if (!window.embedded_svc) {
             var s = document.createElement('script');
-            s.setAttribute('src', 'https://d5j0000045cygea2-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+            s.setAttribute('src', 'https://onebfs--uat.my.salesforce.com/embeddedservice/5.0/esw.min.js');
             s.onload = function() {
                 initESW(null);
             };
